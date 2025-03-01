@@ -1,0 +1,38 @@
+
+
+.root {
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+}
+
+.text-field, .passwordField {
+    -fx-background-color: #34495e;
+    -fx-text-fill: #ecf0f1;
+    -fx-prompt-text-fill: #95a5a6;
+    -fx-border-color: #1abc9c;
+    -fx-border-width: 0 0 2px 0;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 5 10;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9;
+}
+
+.button:pressed {
+    -fx-background-color: #1c598a;
+}
+
+.errorLabel {
+    -fx-text-fill: #e74c3c;
+    -fx-font-size: 14px;
+}

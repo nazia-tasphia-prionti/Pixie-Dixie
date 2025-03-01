@@ -1,0 +1,64 @@
+/* signup.css */
+.root {
+    -fx-background-image: url("com/example/pixiedixie/sign in (1).png");
+    -fx-background-size: cover; /* Ensures the image covers the entire screen */
+    -fx-background-position: center center; /* Centers the image */
+    -fx-background-repeat: no-repeat; /* Prevents the image from repeating */
+    -fx-background-insets: 0; /* Ensures the image covers the entire area */
+    -fx-pref-width: 100%; /* Ensures the container fills the entire width */
+    -fx-pref-height: 100%; /* Ensures the container fills the entire height */
+}
+
+AnchorPane {
+    -fx-background-image: url("com/example/pixiedixie/sign in (1).png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0;
+    -fx-pref-width: 100%;
+    -fx-pref-height: 100%;
+}
+
+Text, Label, TextField, PasswordField, Button, Hyperlink {
+    -fx-font-family: "@OpenDyslexic-Bold.ttf";
+}
+
+Text {
+    -fx-fill: #ecf0f1;
+}
+
+TextField, PasswordField {
+    -fx-background-color: #34495e;
+    -fx-text-fill: #ecf0f1;
+    -fx-prompt-text-fill: #95a5a6;
+    -fx-border-color: #1abc9c;
+    -fx-border-width: 0 0 2px 0;
+    -fx-font-size: 14px;
+}
+
+Button {
+    -fx-background-color: #1abc9c;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 5 10;
+}
+
+Button:hover {
+    -fx-background-color: #16a085;
+}
+
+Hyperlink {
+    -fx-text-fill: #1abc9c;
+    -fx-font-size: 14px;
+}
+
+Hyperlink:hover {
+    -fx-text-fill: #16a085;
+}
+
+Label.error-label {
+    -fx-text-fill: #e74c3c;
+    -fx-font-size: 14px;
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="539.0" prefWidth="814.0" stylesheets="@signup.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pixiedixie.SignupController">
+    <ImageView fitHeight="540.0" fitWidth="963.0" layoutX="-47.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@sign in (1).png" />
+    </ImageView>
+
+    <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="300.0" layoutY="20" pickOnBounds="true" preserveRatio="true">
+        <Image url="@astronaut.gif" />
+    </ImageView>
+    <Text fontSmoothingType="LCD" layoutX="590.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SIGNUP" wrappingWidth="198.1366844177246">
+        <font>
+            <Font name="@OpenDyslexic-Bold.ttf" size="48.0" />
+        </font>
+    </Text>
+    <TextField fx:id="emailField" layoutX="541.0" layoutY="180.0" prefHeight="31.0" prefWidth="295.0" promptText="EMAIL" />
+    <PasswordField fx:id="passwordField" layoutX="541.0" layoutY="280.0" prefHeight="31.0" prefWidth="295.0" promptText="PASSWORD" />
+    <TextField fx:id="usernameField" layoutX="541.0" layoutY="230.0" prefHeight="31.0" prefWidth="295.0" promptText="USER NAME" />
+    <PasswordField fx:id="confirmPasswordField" layoutX="541.0" layoutY="332.0" prefHeight="31.0" prefWidth="295.0" promptText="CONFIRM PASSWORD" />
+    <Button fx:id="signupButton" alignment="CENTER" layoutX="613.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="38.0" prefWidth="150.0" text="SIGNUP" />
+    <Text fill="BLACK" layoutX="586.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account ?" wrappingWidth="206.7830867767334" />
+    <Hyperlink fx:id="loginLink" layoutX="725.0" layoutY="457.0" text="login" />
+    <ProgressIndicator fx:id="loadingIndicator" layoutX="750.0" layoutY="402.0" visible="false" />
+   <Label fx:id="errorLabel" alignment="CENTER" layoutX="595.0" layoutY="377.0" prefHeight="20.0" prefWidth="200.0" styleClass="error-label" />
+</AnchorPane>
